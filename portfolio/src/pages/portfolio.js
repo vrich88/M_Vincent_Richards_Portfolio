@@ -1,11 +1,15 @@
-import React from 'react'
+import React from "react";
+import Display from "../components/display";
 
 function portfolio() {
   return (
-    <div>
-      portfolio test
-    </div>
+  <div>
+    <h1>
+      Portfolio
+    </h1>
+    <Display />
+  </div>
   )
 }
 
-export default portfolio
+export default portfolio;
