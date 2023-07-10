@@ -1,79 +1,51 @@
 import React from "react";
-import { chakra, Box, Flex, Icon, Stack } from "@chakra-ui/react";
+import {
+  chakra,
+  Box,
+  Flex,
+  Icon,
+  Stack,
+  flexbox,
+  Spacer,
+} from "@chakra-ui/react";
 import ImgCard from "./imgCard";
 import SampleCard from "./sampleCard";
-import { portfolioCards } from "../assets/data/data";
 
 const Display = () => {
-  const Feature = (props) => {
-    return (
-      <Flex>
-        <Flex shrink={0}>
-          <Flex
-            alignItems="center"
-            justifyContent="center"
-            h={12}
-            w={12}
-            rounded="md"
-            _light={{ bg: "brand.500" }}
-            color="white"
-          >
-            <Icon
-              boxSize={6}
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              aria-hidden="true"
-            >
-              {props.icon}
-            </Icon>
-          </Flex>
-        </Flex>
-        <Box ml={4}>
-          <chakra.dt
-            fontSize="lg"
-            fontWeight="medium"
-            lineHeight="6"
-            _light={{ color: "gray.900" }}
-          >
-            {props.title}
-          </chakra.dt>
-          <chakra.dd mt={2} color="gray.500" _dark={{ color: "gray.400" }}>
-            {props.children}
-          </chakra.dd>
-        </Box>
-      </Flex>
-    );
-  };
   return (
     <Flex
-      bg="#edf3f8"
+      // main page background
+      bg="darkgrey"
       _dark={{ bg: "#3e3e3e" }}
-      p={20}
+      p="3rem"
       w="auto"
       justifyContent="center"
       alignItems="center"
     >
-      <Box py={12} bg="white" _dark={{ bg: "gray.800" }} rounded="xl">
-        <Box maxW="7xl" mx="auto" px={{ base: 4, lg: 8 }}>
-          <Box textAlign={{ lg: "center" }}>
-            <ImgCard />
-          </Box>
-
-          <Box mt={10}>
-            <Stack
-              spacing={{ base: 10, md: 0 }}
-              display={{ md: "grid" }}
-              gridTemplateColumns={{ md: "repeat(2,1fr)" }}
-              gridColumnGap={{ md: 8 }}
-              gridRowGap={{ md: 10 }}
-            >
-              {/* {portfolioCards.map((portfolioCards))} */}
-              <SampleCard />
-
-            </Stack>
-          </Box>
-        </Box>
+      <Box
+        bg="white"
+        _dark={{ bg: "gray.800" }}
+        rounded="xl"
+        p="2rem"
+        maxW="7xl"
+        mx="auto"
+        px={{ base: 4, lg: 8 }}
+        spacing={{ base: 10, md: 0 }}
+        display={{ md: "grid" }}
+        gridRowGap={{ md: "1rem" }}
+      >
+        {/* featured work big at top of display */}
+        <ImgCard />
+        <Stack
+          spacing={{ base: 10, md: 0 }}
+          display={{ md: "grid" }}
+          gridTemplateColumns={{ md: "repeat(3,1fr)" }}
+          gridColumnGap={{ md: "1rem" }}
+          gridRowGap={{ md: "1rem" }}
+        >
+          {/* primary sampling of recent work*/}
+          <SampleCard />
+        </Stack>
       </Box>
     </Flex>
   );

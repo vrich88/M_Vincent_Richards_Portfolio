@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
+import Welcome from "../components/welcome";
+import Grid from "../components/grid";
 
 function about() {
   return (
     <div>
-      about test
+      <Welcome />
+      <Grid />
     </div>
   )
 }
