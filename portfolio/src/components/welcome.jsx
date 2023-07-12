@@ -4,17 +4,13 @@ import { myPics } from "../assets/data/data";
 
 const Welcome = () => {
   return (
-    <SimpleGrid columns={{ base: 1, md: 2 }} spacing={0}>
-      <Flex bg="brand.400">
+    <SimpleGrid columns={{ base: 1, md: 2 }} >
+      <Flex >
         <Image
-          src=""
-          alt="3 women looking at a laptop"
-          fit="cover"
-          w="full"
-          h={{ base: 64, md: "full" }}
+          src={myPics.headshot}
+          alt="photo of M. Vincent Richards"
           bg="gray.100"
           loading="lazy"
-          opacity={0.4}
         />
       </Flex>
       <Flex
@@ -25,58 +21,70 @@ const Welcome = () => {
         py={24}
         zIndex={3}
       >
-        <chakra.span
-          color="brand.600"
-          _dark={{ color: "gray.300" }}
-          fontSize="lg"
-          textTransform="uppercase"
-          fontWeight="extrabold"
-        >
-          Award winning support
-        </chakra.span>
         <chakra.h1
-          mb={4}
+          py="0.5rem"
           fontSize={{ base: "4xl", md: "4xl", lg: "5xl" }}
           fontWeight="bold"
           color="brand.600"
           _dark={{ color: "gray.300" }}
-          lineHeight="shorter"
-          textShadow="2px 0 currentcolor"
         >
-          We&apos;re here to help
+          Ahoy!
         </chakra.h1>
         <chakra.p
-          pr={{ base: 0, lg: 16 }}
-          mb={4}
           fontSize="lg"
           color="brand.600"
           _dark={{ color: "gray.400" }}
           letterSpacing="wider"
         >
-          Get the #1 Business Messenger and start delivering personalized
-          experiences at every stage of the customer journey.
+          I am a Full Stack Web Developer in Texas. I am ...
+          the rest is just filler to see how big of a paragraph to write 
+          the rest is just filler to see how big of a paragraph to write 
+          the rest is just filler to see how big of a paragraph to write 
+          the rest is just filler to see how big of a paragraph to write 
+          the rest is just filler to see how big of a paragraph to write 
         </chakra.p>
-        <Box display="inline-flex" rounded="md" shadow="md">
+        <Box
+          display="inline-flex"
+          gap="5rem"
+          bg="transparent"
+          alignItems="center"
+          justifyContent="center"
+        >
           <chakra.a
-            mt={2}
-            display="inline-flex"
+            color={["primary.800"]}
             alignItems="center"
             justifyContent="center"
-            px={5}
-            py={3}
-            border="solid transparent"
+            p="0.5rem"
             fontWeight="bold"
-            w="full"
+            w="50%"
             rounded="md"
-            _light={{ color: "white" }}
-            bg="brand.600"
-            _dark={{ bg: "brand.500" }}
+            // _light={{ color: "white" }}
+            bg={["primary.500"]}
+            // _dark={{ bg: "brand.500" }}
             _hover={{
               bg: "brand.700",
               _dark: { bg: "brand.600" },
             }}
           >
-            Visit the Help Centre
+            Hire Me
+          </chakra.a>
+          <chakra.a
+            color={["primary.800"]}
+            alignItems="center"
+            justifyContent="center"
+            p="0.5rem"
+            fontWeight="bold"
+            w="50%"
+            rounded="md"
+            // _light={{ color: "white" }}
+            bg={["primary.500"]}
+            // _dark={{ bg: "brand.500" }}
+            _hover={{
+              bg: "brand.700",
+              _dark: { bg: "brand.600" },
+            }}
+            whiteSpace="nowrap"          >
+            Read More
           </chakra.a>
         </Box>
       </Flex>

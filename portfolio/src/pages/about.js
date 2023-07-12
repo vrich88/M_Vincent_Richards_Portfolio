@@ -1,12 +1,10 @@
 import React from 'react';
-import Welcome from "../components/welcome";
-import Grid from "../components/grid";
+import Bio from "../components/bio";
 
 function about() {
   return (
     <div>
-      <Welcome />
-      <Grid />
+      <Bio />
     </div>
   )
 }
