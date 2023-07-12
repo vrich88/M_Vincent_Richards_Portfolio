@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
 import {
   chakra,
   Box,
+  Avatar,
   Flex,
+  Image,
   useColorModeValue,
   VisuallyHidden,
   HStack,
@@ -14,45 +15,49 @@ import {
   IconButton,
   CloseButton,
 } from "@chakra-ui/react";
+import { myPics } from "../assets/data/data";
 
 const NavBar = () => {
   const bg = useColorModeValue("white", "gray.800");
   const mobileNav = useDisclosure();
-
   return (
     <React.Fragment>
-      <chakra.header
-        bg={bg}
-        w="full"
-        px={{ base: 2, sm: 4 }}
-        py={4}
-        shadow="md"
-      >
-        <Flex alignItems="center" justifyContent="space-between" mx="auto">
-          <Flex>
-            <chakra.a
-              href="/"
-              title="Choc Home Page"
-              display="flex"
-              alignItems="center"
-            >
-              <VisuallyHidden>Choc</VisuallyHidden>
-            </chakra.a>
-            <chakra.h1 fontSize="xl" fontWeight="medium" ml="2">
-            <Link to="/">M. Vincent Richards</Link>
-            </chakra.h1>
-          </Flex>
+      <chakra.header w="full">
+        <Flex
+          bg={["primary.100"]}
+          color={["primary.300"]}
+          alignItems="center"
+          justifyContent="space-between"
+          mx="auto"
+          p="0.75rem"
+        >
+          <Box alignItems="center">
+            <Link to="/" >
+              <Box alignItems="center" fontSize="2rem">
+                <Avatar src={myPics.avatar} p="0.05rem" bg={["primary.900"]} />
+                &#160;M. Vincent Richards
+              </Box>
+            </Link>
+          </Box>
           <HStack display="flex" alignItems="center" spacing={1}>
             <HStack
-              spacing={1}
+              spacing="1rem"
               mr={1}
               color="brand.500"
               display={{ base: "none", md: "inline-flex" }}
             >
-              <Button variant="ghost"><Link to="/about">About Me</Link></Button>
-              <Button variant="ghost"><Link to="/portfolio">Portfolio</Link></Button>
-              <Button variant="ghost"><Link to="/contact">Contact</Link></Button>
-              <Button variant="ghost"><Link to="/resume">Resume</Link></Button>
+              <Button variant="ghost">
+                <Link to="/about">About Me</Link>
+              </Button>
+              <Button variant="ghost">
+                <Link to="/portfolio">Portfolio</Link>
+              </Button>
+              <Button variant="ghost">
+                <Link to="/contact">Contact</Link>
+              </Button>
+              <Button variant="ghost">
+                <Link to="/resume">Resume</Link>
+              </Button>
             </HStack>
             <Box display={{ base: "inline-flex", md: "none" }}>
               <IconButton
@@ -64,7 +69,6 @@ const NavBar = () => {
                 variant="ghost"
                 onClick={mobileNav.onOpen}
               />
-
               <VStack
                 pos="absolute"
                 top={0}
@@ -84,12 +88,17 @@ const NavBar = () => {
                   aria-label="Close menu"
                   onClick={mobileNav.onClose}
                 />
-
-                <Button w="full" variant="ghost">
-                  <Link to="/profile">Profile</Link>
+                <Button variant="ghost">
+                  <Link to="/about">About Me</Link>
                 </Button>
-                <Button w="full" variant="ghost">
-                <Link to="/contact">Contact</Link>
+                <Button variant="ghost">
+                  <Link to="/portfolio">Portfolio</Link>
+                </Button>
+                <Button variant="ghost">
+                  <Link to="/contact">Contact</Link>
+                </Button>
+                <Button variant="ghost">
+                  <Link to="/resume">Resume</Link>
                 </Button>
               </VStack>
             </Box>

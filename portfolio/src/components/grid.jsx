@@ -64,7 +64,7 @@ const Grid = () => {
             letterSpacing="tight"
             _light={{ color: "gray.900" }}
           >
-            Features
+            Skill Sets
           </chakra.p>
           <chakra.p
             mt={4}
@@ -74,8 +74,7 @@ const Grid = () => {
             color="gray.500"
             _dark={{ color: "gray.400" }}
           >
-            Get insights to dig down into what&apos;s powering your growth the
-            most.
+            These are the tools and languages I work with:
           </chakra.p>
         </Box>
         <SimpleGrid
@@ -95,8 +94,7 @@ const Grid = () => {
               />
             }
           >
-            Hand crafted dashboards for everything from Recurring Revenue to
-            Customer Churn.
+            descript 1
           </Feature>
 
           <Feature
@@ -110,8 +108,7 @@ const Grid = () => {
               />
             }
           >
-            Your central hub that helps you see, and react to, absolutely
-            everything that’s happening.
+            descript 2
           </Feature>
 
           <Feature
@@ -125,8 +122,7 @@ const Grid = () => {
               />
             }
           >
-            Stay informed with daily, weekly, or monthly reports on all your
-            insights data.
+            descript 3
           </Feature>
 
           <Feature
@@ -152,8 +148,7 @@ const Grid = () => {
               </>
             }
           >
-            Our forecasting is your magical crystal ball that helps you predict
-            and plan for the future.
+            descript 4
           </Feature>
           <Feature
             color="purple"
@@ -166,8 +161,7 @@ const Grid = () => {
               />
             }
           >
-            How does your company compare? Learn how your company stacks up in
-            the industry.
+            descript 5
           </Feature>
           <Feature
             color="blue"
@@ -180,8 +174,7 @@ const Grid = () => {
               />
             }
           >
-            Organize your customers to bring meaningful and comparative insights
-            across your dashboards.
+            descript 6
           </Feature>
           <Feature
             color="brand"
@@ -194,8 +187,7 @@ const Grid = () => {
               />
             }
           >
-            Improve your conversion rates by monitoring exactly what’s going on
-            while your customers are in trial.
+            descript 7
           </Feature>
 
           <Feature
@@ -214,8 +206,7 @@ const Grid = () => {
               </>
             }
           >
-            Personalized segmentation, rich customer profiles, manual
-            subscriptions, and more!
+            descript 8
           </Feature>
 
           <Feature
@@ -229,8 +220,7 @@ const Grid = () => {
               />
             }
           >
-            Merge external data with your metrics for deeper insights in to your
-            customers and your business.
+            descript 9
           </Feature>
 
           <Feature
@@ -240,8 +230,7 @@ const Grid = () => {
               <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
             }
           >
-            Want your metrics in other services? Extend and integrate to our
-            every part of your business.
+            descript 10
           </Feature>
 
           <Feature
@@ -255,7 +244,7 @@ const Grid = () => {
               />
             }
           >
-            Send important updates from here to your team’s Support channels.
+            descript 11
           </Feature>
 
           <Feature
@@ -272,8 +261,7 @@ const Grid = () => {
               </>
             }
           >
-            Goals, Breakouts, Instant notifications, Comparisons, Annotations
-            and Cohort Analysis!
+            descript 12
           </Feature>
         </SimpleGrid>
       </Box>

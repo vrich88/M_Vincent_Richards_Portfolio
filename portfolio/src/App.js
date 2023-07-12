@@ -5,6 +5,7 @@ import "./App.css";
 import NavBar from "./components/NavBar";
 import Footer from "./components/footer";
 // pages
+import Header from "./pages/header";
 import About from "./pages/about";
 import Portfolio from "./pages/portfolio";
 import Contact from "./pages/contact";
@@ -15,8 +16,8 @@ function App() {
     <BrowserRouter>
       <NavBar />
       <Routes>
-        <Route path="/" element={<About />} /> {/* home page aka about page */}
-        <Route path="/about" element={<About />} /> {/* about page aka home page */}
+        <Route path="/" element={<Header />} /> {/* home page / about preview */}
+        <Route path="/about" element={<About />} /> {/* about page */}
         <Route path="/portfolio" element={<Portfolio />} /> {/* portfolio page */}
         <Route path="/contact" element={<Contact />} /> {/* contact page */}
         <Route path="/resume" element={<Resume />} /> {/* resume page */}

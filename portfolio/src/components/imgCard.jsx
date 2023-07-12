@@ -5,16 +5,10 @@ import { featureCard } from "../assets/data/data";
 const ImgCard = () => {
   return (
     <>
-      <Flex
-        bg="blue"
-        _dark={{ bg: "#3e3e3e" }}
-        p="1rem"
-        w="full"
-        alignItems="center"
-        justifyContent="center"
-        rounded="lg"
-      >
+      <Flex>
         <Box
+          bg="yellow"
+          p="1rem"
           mx="auto"
           rounded="lg"
           shadow="md"
@@ -40,7 +34,7 @@ const ImgCard = () => {
               mt={2}
               _hover={{ color: "gray.600", textDecor: "underline" }}
               href={featureCard.link}
-              textAlign={{lg: "center"}}
+              textAlign={{ lg: "center" }}
             >
               {featureCard.title}
             </Link>
