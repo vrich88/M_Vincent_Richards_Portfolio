@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { logos } from "../assets/data/data";
 
 import {
   Box,
@@ -25,7 +26,7 @@ const Footer = () => {
         >
           <Flex justify="center">
             <Image
-              src="http://placehold.jp/2a2a2c/ffffff/200x100.png?text=Company%20Logo&css=%7B%22font-size%20%22%3A%22%2016px%22%7D"
+              src={logos.tempLogo}
               alt="Company Logo"
               rounded="lg"
               width={{ base: "150px", lg: "200px" }}
@@ -68,7 +69,7 @@ const Footer = () => {
             </Flex>
           </HStack>
         </Stack>
-        <Text textAlign="center" fontSize="smaller" _dark={{ color: "white" }}>
+        <Text paddingBottom="1rem" textAlign="center" fontSize="smaller" _dark={{ color: "white" }}>
           All rights reserved.
         </Text>
       </Stack>

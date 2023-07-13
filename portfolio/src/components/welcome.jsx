@@ -49,6 +49,7 @@ const Welcome = () => {
           bg="transparent"
           alignItems="center"
           justifyContent="center"
+          py="1rem"
         >
           <chakra.a
             color={["primary.800"]}
