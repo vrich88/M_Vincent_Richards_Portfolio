@@ -20,6 +20,7 @@ export const featureCard = {
   link: "feature link",
   title: "feature title",
   description: "feature descript",
+  repo: "",
   image: featureImg,
   alt: "feature alt",
 };
@@ -30,6 +31,7 @@ export const portfolioCards = [
     link: "link 1",
     title: "title 1",
     description: "descript 1",
+    repo: "",
     image: displayImg1,
     alt: "alt 1",
   },
@@ -38,6 +40,7 @@ export const portfolioCards = [
     link: "link 2",
     title: "title 2",
     description: "descript 2",
+    repo: "",
     image: displayImg2,
     alt: "alt 2",
   },
@@ -46,6 +49,7 @@ export const portfolioCards = [
     link: "link 3",
     title: "title 3",
     description: "descript 3",
+    repo: "",
     image: displayImg3,
     alt: "alt 3",
   },
@@ -54,32 +58,38 @@ export const portfolioCards = [
     link: "link 4",
     title: "title 4",
     description: "descript 4",
+    repo: "",
     image: displayImg4,
     alt: "alt 4",
   },
   {
     id: 5,
-    link: "link 5",
-    title: "title 5",
-    description: "descript 5",
+    link: "https://vrich88.github.io/MVR-bootcamp-challenge-4/",
+    title: "Coding Quiz",
+    description: "A simple quiz based in javascript",
+    repo: "https://github.com/vrich88/MVR-bootcamp-challenge-4",
     image: displayImg5,
     alt: "alt 5",
   },
   {
     id: 6,
-    link: "link 6",
-    title: "title 6",
-    description: "descript 6",
+    link: "https://vrich88.github.io/MVR-bootcamp-challenge-6/",
+    title: "Weather Forecast",
+    description: "A basic weather forecast app using api fetch call",
+    repo: "https://github.com/vrich88/MVR-bootcamp-challenge-6",
     image: displayImg6,
     alt: "alt 6",
   },
 ];
-
-export const allPortfolio = [{}];
+// future enhancement of all portfolio projects? maybe make a separate data js file
+// export const allPortfolio = [{}];
 
 export const myPics = {
   avatar: avatar,
   headshot: headshot,
+  linkedIn: "https://www.linkedin.com/in/vincent-richards13/",
+  gitHub: "https://github.com/vrich88",
+  spotify: "https://open.spotify.com/user/31awmnydrl3l5w65aeewv4txlf6i",
 };
 
 export const logos = {

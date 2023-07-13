@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { logos } from "../assets/data/data";
-
+import { myPics } from "../assets/data/data";
 import {
   Box,
   Flex,
@@ -69,7 +69,37 @@ const Footer = () => {
             </Flex>
           </HStack>
         </Stack>
-        <Text paddingBottom="1rem" textAlign="center" fontSize="smaller" _dark={{ color: "white" }}>
+        <HStack
+          alignItems="center"
+          flex={1}
+          justify="space-around"
+          fontSize={{ base: "12px", md: "16px" }}
+          color="gray.800"
+          _dark={{ color: "white" }}
+          textAlign={{ base: "center", md: "left" }}
+          p="1rem"
+        >
+          <Flex justify="start" direction="column">
+            <Link to={myPics.linkedIn}>LinkedIn</Link>
+          </Flex>
+          <Flex justify="start" direction="column">
+            <Link Link to={myPics.gitHub}>
+              Github
+            </Link>
+          </Flex>
+          <Flex justify="start" direction="column">
+            <Link Link to={myPics.spotify}>
+              Spotify
+            </Link>
+          </Flex>
+        </HStack>
+        <Divider />
+        <Text
+          paddingBottom="1rem"
+          textAlign="center"
+          fontSize="smaller"
+          _dark={{ color: "white" }}
+        >
           All rights reserved.
         </Text>
       </Stack>
