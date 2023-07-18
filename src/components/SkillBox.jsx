@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Flex, Image, Link, chakra } from "@chakra-ui/react";
 import { skills } from "../assets/data/data";
 
-const SkillBox_ = () => {
+const SkillBox = () => {
   return (
     <>
       {skills.map((skill) => (
@@ -32,4 +32,4 @@ const SkillBox_ = () => {
   );
 };
 
-export default SkillBox_;
+export default SkillBox;

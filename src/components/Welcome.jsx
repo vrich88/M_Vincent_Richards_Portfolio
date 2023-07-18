@@ -2,7 +2,7 @@ import React from "react";
 import { chakra, Box, Flex, SimpleGrid, Icon, Image } from "@chakra-ui/react";
 import { myPics } from "../assets/data/data";
 
-const Welcome_ = () => {
+const Welcome = () => {
   return (
     <SimpleGrid columns={{ base: 1, md: 2 }} >
       <Flex >
@@ -93,4 +93,4 @@ const Welcome_ = () => {
   );
 };
 
-export default Welcome_;
+export default Welcome;

@@ -1,8 +1,8 @@
 import React from "react";
 import { chakra, Box, SimpleGrid, Flex, Icon } from "@chakra-ui/react";
-import SkillBox from "./SkillBox_";
+import SkillBox from "./SkillBox";
 
-const Grid_ = () => {
+const Grid = () => {
   return (
     <Flex
       bg="#edf3f8"
@@ -53,4 +53,4 @@ const Grid_ = () => {
     </Flex>
   );
 };
-export default Grid_;
+export default Grid;

@@ -17,7 +17,7 @@ import {
 } from "@chakra-ui/react";
 import { myPics } from "../assets/data/data";
 
-const NavBar_ = () => {
+const NavBar = () => {
   const bg = useColorModeValue("white", "gray.800");
   const mobileNav = useDisclosure();
   return (
@@ -32,7 +32,7 @@ const NavBar_ = () => {
           p="0.75rem"
         >
           <Box alignItems="center">
-            <Link to="/" >
+            <Link to="/M_Vincent_Richards_Portfolio/" >
               <Box alignItems="center" fontSize="2rem">
                 <Avatar src={myPics.avatar} p="0.05rem" bg={["primary.900"]} />
                 &#160;M. Vincent Richards
@@ -47,16 +47,16 @@ const NavBar_ = () => {
               display={{ base: "none", md: "inline-flex" }}
             >
               <Button variant="ghost">
-                <Link to="/about_">About Me</Link>
+                <Link to="/about">About Me</Link>
               </Button>
               <Button variant="ghost">
-                <Link to="/portfolio_">Portfolio</Link>
+                <Link to="/portfolio">Portfolio</Link>
               </Button>
               <Button variant="ghost">
-                <Link to="/contact_">Contact</Link>
+                <Link to="/contact">Contact</Link>
               </Button>
               <Button variant="ghost">
-                <Link to="/resume_">Resume</Link>
+                <Link to="/resume">Resume</Link>
               </Button>
             </HStack>
             <Box display={{ base: "inline-flex", md: "none" }}>
@@ -92,13 +92,13 @@ const NavBar_ = () => {
                   <Link to="/about_">About Me</Link>
                 </Button>
                 <Button variant="ghost">
-                  <Link to="/portfolio_">Portfolio</Link>
+                  <Link to="/portfolio">Portfolio</Link>
                 </Button>
                 <Button variant="ghost">
-                  <Link to="/contact_">Contact</Link>
+                  <Link to="/contact">Contact</Link>
                 </Button>
                 <Button variant="ghost">
-                  <Link to="/resume_">Resume</Link>
+                  <Link to="/resume">Resume</Link>
                 </Button>
               </VStack>
             </Box>
@@ -108,4 +108,4 @@ const NavBar_ = () => {
     </React.Fragment>
   );
 };
-export default NavBar_;
+export default NavBar;
