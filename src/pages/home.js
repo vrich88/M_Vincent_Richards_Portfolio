@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Flex } from "@chakra-ui/react";
 import Welcome from "../components/welcome";
 
-function home() {
+function Home() {
   return (
     <div>
       <Flex
@@ -33,4 +33,4 @@ function home() {
   );
 }
 
-export default home;
+export default Home;

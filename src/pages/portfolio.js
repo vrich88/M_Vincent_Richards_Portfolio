@@ -1,7 +1,7 @@
 import React from "react";
 import Display from "../components/display";
 
-function portfolio() {
+function Portfolio() {
   return (
   <div>
     <Display />
@@ -9,4 +9,4 @@ function portfolio() {
   )
 }
 
-export default portfolio;
+export default Portfolio;

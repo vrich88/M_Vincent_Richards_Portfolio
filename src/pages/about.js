@@ -1,12 +1,12 @@
-import React from 'react';
+import React from "react";
 import Bio from "../components/bio";
 
-function about() {
+function About() {
   return (
     <div>
       <Bio />
     </div>
-  )
+  );
 }
 
-export default about
+export default About;

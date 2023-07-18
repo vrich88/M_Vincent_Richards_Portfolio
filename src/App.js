@@ -5,11 +5,11 @@ import "./App.css";
 import NavBar from "./components/NavBar";
 import Footer from "./components/footer";
 // pages
-import Home from "./pages/home";
-import About from "./pages/about";
-import Portfolio from "./pages/portfolio";
-import Contact from "./pages/contact";
-import Resume from "./pages/resume";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Portfolio from "./pages/Portfolio";
+import Contact from "./pages/Contact";
+import Resume from "./pages/Resume";
 // app routes
 function App() {
   return (
