@@ -14,7 +14,7 @@ import {
   Icon,
 } from "@chakra-ui/react";
 
-const Footer = () => {
+const Footer_ = () => {
   return (
     <Box bg="white" _dark={{ bg: "gray.600" }}>
       <Stack>
@@ -107,4 +107,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default Footer_;

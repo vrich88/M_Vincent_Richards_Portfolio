@@ -1,32 +1,32 @@
 // imports
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 // components
-import NavBar from "./components/NavBar";
-import Footer from "./components/footer";
+import NavBar_ from "./components/NavBar_";
+import Footer_ from "./components/Footer_";
 // pages
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Portfolio from "./pages/Portfolio";
-import Contact from "./pages/Contact";
-import Resume from "./pages/Resume";
+import Home_ from "./pages/Home_";
+import About_ from "./pages/About_";
+import Portfolio_ from "./pages/Portfolio_";
+import Contact_ from "./pages/Contact_";
+import Resume_ from "./pages/Resume_";
 // app routes
 function App() {
   return (
-    <Router>
-      <NavBar />
+    <BrowserRouter>
+      <NavBar_ />
       <Routes>
         // this part of route path was required during testing:
         /M_Vincent_Richards_Portfolio
-        <Route path="/" element={<Home />} /> {/* home page */}
-        <Route path="/about" element={<About />} /> {/* about page */}
-        <Route path="/portfolio" element={<Portfolio />} />{" "}
+        <Route path="/" element={<Home_ />} /> {/* home page */}
+        <Route path="/about_" element={<About_ />} /> {/* about page */}
+        <Route path="/portfolio_" element={<Portfolio_ />} />
         {/* portfolio page */}
-        <Route path="/contact" element={<Contact />} /> {/* contact page */}
-        <Route path="/resume" element={<Resume />} /> {/* resume page */}
+        <Route path="/contact_" element={<Contact_ />} /> {/* contact page */}
+        <Route path="/resume_" element={<Resume_ />} /> {/* resume page */}
       </Routes>
-      <Footer />
-    </Router>
+      <Footer_ />
+    </BrowserRouter>
   );
 }
 // export

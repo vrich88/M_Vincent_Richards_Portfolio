@@ -8,10 +8,10 @@ import {
   flexbox,
   Spacer,
 } from "@chakra-ui/react";
-import Welcome from "./welcome";
-import Grid from "./grid";
+import Welcome_ from "./Welcome_";
+import Grid_ from "./Grid_";
 
-const Bio = () => {
+const Bio_ = () => {
   return (
     <Flex
       // main page background
@@ -35,10 +35,10 @@ const Bio = () => {
         gridRowGap={{ md: "1rem" }}
       >
         {/* featured work big at top of display */}
-        <Welcome />
-        <Grid />
+        <Welcome_ />
+        <Grid_ />
       </Box>
     </Flex>
   );
 };
-export default Bio;
+export default Bio_;

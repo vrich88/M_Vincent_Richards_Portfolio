@@ -17,7 +17,7 @@ import {
 } from "@chakra-ui/react";
 import { myPics } from "../assets/data/data";
 
-const NavBar = () => {
+const NavBar_ = () => {
   const bg = useColorModeValue("white", "gray.800");
   const mobileNav = useDisclosure();
   return (
@@ -47,16 +47,16 @@ const NavBar = () => {
               display={{ base: "none", md: "inline-flex" }}
             >
               <Button variant="ghost">
-                <Link to="/about">About Me</Link>
+                <Link to="/about_">About Me</Link>
               </Button>
               <Button variant="ghost">
-                <Link to="/portfolio">Portfolio</Link>
+                <Link to="/portfolio_">Portfolio</Link>
               </Button>
               <Button variant="ghost">
-                <Link to="/contact">Contact</Link>
+                <Link to="/contact_">Contact</Link>
               </Button>
               <Button variant="ghost">
-                <Link to="/resume">Resume</Link>
+                <Link to="/resume_">Resume</Link>
               </Button>
             </HStack>
             <Box display={{ base: "inline-flex", md: "none" }}>
@@ -89,16 +89,16 @@ const NavBar = () => {
                   onClick={mobileNav.onClose}
                 />
                 <Button variant="ghost">
-                  <Link to="/about">About Me</Link>
+                  <Link to="/about_">About Me</Link>
                 </Button>
                 <Button variant="ghost">
-                  <Link to="/portfolio">Portfolio</Link>
+                  <Link to="/portfolio_">Portfolio</Link>
                 </Button>
                 <Button variant="ghost">
-                  <Link to="/contact">Contact</Link>
+                  <Link to="/contact_">Contact</Link>
                 </Button>
                 <Button variant="ghost">
-                  <Link to="/resume">Resume</Link>
+                  <Link to="/resume_">Resume</Link>
                 </Button>
               </VStack>
             </Box>
@@ -108,4 +108,4 @@ const NavBar = () => {
     </React.Fragment>
   );
 };
-export default NavBar;
+export default NavBar_;

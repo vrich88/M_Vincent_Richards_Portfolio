@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Flex, Image, Link, chakra } from "@chakra-ui/react";
 import { featureCard } from "../assets/data/data";
 
-const ImgCard = () => {
+const ImgCard_ = () => {
   return (
     <>
       <Flex>
@@ -53,4 +53,4 @@ const ImgCard = () => {
   );
 };
 
-export default ImgCard;
+export default ImgCard_;

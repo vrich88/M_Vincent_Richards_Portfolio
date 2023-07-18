@@ -4,7 +4,7 @@ import { Document, Page, pdfjs } from "react-pdf";
 import MvrResume from "../assets/mvr-resume.pdf";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
-function Resume() {
+function Resume_() {
   return (
     <div>
       <Flex
@@ -51,4 +51,4 @@ function Resume() {
   );
 }
 
-export default Resume;
+export default Resume_;

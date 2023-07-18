@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Flex, Image, Link, chakra } from "@chakra-ui/react";
 import { portfolioCards } from "../assets/data/data";
 
-const SampleCard = () => {
+const SampleCard_ = () => {
   return (
     <>
       {portfolioCards.map((portfolioCard) => (
@@ -59,4 +59,4 @@ const SampleCard = () => {
   );
 };
 
-export default SampleCard;
+export default SampleCard_;

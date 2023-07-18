@@ -10,7 +10,7 @@ import {
   Divider,
 } from "@chakra-ui/react";
 
-function Contact() {
+function Contact_() {
   return (
     <div>
       <Flex
@@ -74,4 +74,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default Contact_;
