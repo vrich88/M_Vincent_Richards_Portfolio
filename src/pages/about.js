@@ -1,5 +1,5 @@
 import React from "react";
-import Bio from "../components/bio";
+import Bio from "../components/Bio";
 
 function About() {
   return (

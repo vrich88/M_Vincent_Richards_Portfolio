@@ -8,8 +8,8 @@ import {
   flexbox,
   Spacer,
 } from "@chakra-ui/react";
-import Welcome from "../components/welcome";
-import Grid from "../components/grid";
+import Welcome from "./welcome";
+import Grid from "./grid";
 
 const Bio = () => {
   return (
