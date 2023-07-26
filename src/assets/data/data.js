@@ -15,7 +15,7 @@ import avatar from "../images/myAvatar.png";
 import headshot from "../images/myheadshot.jpg";
 // logos
 import tempLogo from "../images/networklogo.jpg";
-
+// updated 7/25/23
 export const featureCard = {
   link: "https://mysterious-tor-86894-5737c7df594a.herokuapp.com/",
   title: "Equinox",
