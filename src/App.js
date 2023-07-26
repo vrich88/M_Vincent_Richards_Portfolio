@@ -31,3 +31,8 @@ function App() {
 }
 // export
 export default App;
+
+// remember to update gh pages you need to :
+// 
+// 
+// 
