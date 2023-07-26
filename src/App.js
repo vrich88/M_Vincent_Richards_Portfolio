@@ -33,6 +33,7 @@ function App() {
 export default App;
 
 // remember to update gh pages you need to :
-// 
-// 
-// 
+// run build & deploy
+// add commit push
+// git push -u origin main
+// go to environments and tell it to run deployment jobs from gh pages
