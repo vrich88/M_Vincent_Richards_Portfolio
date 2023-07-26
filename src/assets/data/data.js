@@ -24,7 +24,7 @@ export const featureCard = {
   image: featureImg,
   alt: "Equinox forum site",
 };
-
+// updated 7/25/23
 export const portfolioCards = [
   {
     id: 1,
