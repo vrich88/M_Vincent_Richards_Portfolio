@@ -17,12 +17,12 @@ import headshot from "../images/myheadshot.jpg";
 import tempLogo from "../images/networklogo.jpg";
 
 export const featureCard = {
-  link: "feature link",
-  title: "feature title",
-  description: "feature descript",
-  repo: "",
+  link: "https://mysterious-tor-86894-5737c7df594a.herokuapp.com/",
+  title: "Equinox",
+  description: "A discussion forum site focused on UFOs, Cryptids, and other unexplained phenomena",
+  repo: "https://github.com/vrich88/cautious-journey",
   image: featureImg,
-  alt: "feature alt",
+  alt: "Equinox forum site",
 };
 
 export const portfolioCards = [
@@ -78,7 +78,7 @@ export const portfolioCards = [
     description: "A basic weather forecast app using api fetch call",
     repo: "https://github.com/vrich88/MVR-bootcamp-challenge-6",
     image: displayImg6,
-    alt: "alt 6",
+    alt: "weather forecast site",
   },
 ];
 // future enhancement of all portfolio projects? maybe make a separate data js file
