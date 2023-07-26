@@ -32,7 +32,7 @@ const NavBar = () => {
           p="0.75rem"
         >
           <Box alignItems="center">
-            <Link to="/" >
+            <Link to="/M_Vincent_Richards_Portfolio/" >
               <Box alignItems="center" fontSize="2rem">
                 <Avatar src={myPics.avatar} p="0.05rem" bg={["primary.900"]} />
                 &#160;M. Vincent Richards
@@ -89,7 +89,7 @@ const NavBar = () => {
                   onClick={mobileNav.onClose}
                 />
                 <Button variant="ghost">
-                  <Link to="/about">About Me</Link>
+                  <Link to="/about_">About Me</Link>
                 </Button>
                 <Button variant="ghost">
                   <Link to="/portfolio">Portfolio</Link>

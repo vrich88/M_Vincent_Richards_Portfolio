@@ -1,6 +1,6 @@
 import React from "react";
 import { chakra, Box, SimpleGrid, Flex, Icon } from "@chakra-ui/react";
-import SkillBox from "./skillBox";
+import SkillBox from "./SkillBox";
 
 const Grid = () => {
   return (

@@ -8,10 +8,10 @@ import {
   flexbox,
   Spacer,
 } from "@chakra-ui/react";
-import ImgCard from "./imgCard";
-import SampleCard from "./sampleCard";
+import Welcome from "./Welcome";
+import Grid from "./Grid";
 
-const Display = () => {
+const Bio = () => {
   return (
     <Flex
       // main page background
@@ -35,19 +35,10 @@ const Display = () => {
         gridRowGap={{ md: "1rem" }}
       >
         {/* featured work big at top of display */}
-        <ImgCard />
-        <Stack
-          spacing={{ base: 10, md: 0 }}
-          display={{ md: "grid" }}
-          gridTemplateColumns={{ md: "repeat(3,1fr)" }}
-          gridColumnGap={{ md: "1rem" }}
-          gridRowGap={{ md: "1rem" }}
-        >
-          {/* primary sampling of recent work*/}
-          <SampleCard />
-        </Stack>
+        <Welcome />
+        <Grid />
       </Box>
     </Flex>
   );
 };
-export default Display;
+export default Bio;
